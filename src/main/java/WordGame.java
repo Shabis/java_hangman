@@ -1,19 +1,21 @@
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Random;
+
 
 public class WordGame {
 
-  public boolean printsWord(String play) {
+  public static String printsWord(String play) {
     List<String> myWordList = new ArrayList<String>();
-      myWordList.add("instantiation");
+      myWordList.add("blah");
+      myWordList.add("ugh");
       myWordList.add("programming");
-      myWordList.add("encapsulation");
-      myWordList.add("visibility");
+      myWordList.add("@#$@!");
 
-    for ( String word : myWordList ) {
-      // return true;
-    }
-    return false;
+    Random myRandomGenerator = new Random();
+    int index = myRandomGenerator.nextInt(3);
+    String printWord = myWordList.get(index);
+    return printWord;
   }
 
 

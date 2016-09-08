@@ -6,8 +6,7 @@ public class WordGameTest {
   @Test
   public void printsWord_printsWord_String(){
     WordGame testWordGame = new WordGame();
-    assertEquals(true, testWordGame.printsWord("play"));
+    String printWord = testWordGame.printsWord("play");
+    assertEquals(true, printWord instanceof String);
   }
-
-
 }
