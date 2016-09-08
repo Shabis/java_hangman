@@ -6,7 +6,9 @@ public class App {
 
     System.out.println("ready to play? Enter play to get started.");
     String readyToPlay = console.readLine();
-    System.out.println(WordGame.printsWord(readyToPlay));
+
+    String wordAtRandom = WordGame.printsWord(readyToPlay);
+    System.out.println(WordGame.obscureWord(wordAtRandom));
 
     System.out.println("Enter a letter");
     String letterGuessed = console.readLine();
